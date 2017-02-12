@@ -1,4 +1,4 @@
-# react-webpack-setup
+# react-setup
 React Redux Webpack Babel Koa setup for kickstarting project in no time
 
 > This repo is for those who doesn't want to mess up with react webpack babel setup. This app does it for you. You start writing your application logic starting from "App.js"
@@ -15,7 +15,7 @@ React Redux Webpack Babel Koa setup for kickstarting project in no time
 
 **Instructions**
 
-1. clone the repo: ```git clone https://github.com/shek8034/react-webpack-setup.git```
+1. clone the repo: ```git clone https://github.com/rajatyadav/react-setup.git```
 
 2. Run ```npm install```
 
@@ -34,7 +34,7 @@ I will keep updating this repo and will try to make it more resuable.
 
 **Contributions**
 
-Contributions are welcome and if someone wants to add something to the repo and improve it, please go ahead and raise PR or write to me ```shekhar.mnnit10@gmail.com```
+Contributions are welcome and if someone wants to add something to the repo and improve it, please go ahead and raise PR or write to me ```rajatyadav02@yahoo.co.in```
 
 **LICENSE**
 

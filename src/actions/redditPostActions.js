@@ -1,4 +1,3 @@
-import 'whatwg-fetch';
 import { checkHttpStatus, parseJSON } from './utils';
 import actionTypes from './actionTypes';
 
