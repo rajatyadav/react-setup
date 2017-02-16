@@ -1,13 +1,13 @@
 import actionTypes from '../actions/actionTypes';
 const initialState = {
-    posts: []
+    cities: []
 };
 
-export default function redditPost(state = initialState, action) {
+export default function citiesList(state = initialState, action) {
     switch(action.type) {
-        case actionTypes.GET_REDDIT_POST_SUCCESS: {
+        case actionTypes.GET_CITIES_SUCCESS: {
             return Object.assign({}, state, {
-                posts: action.payload.data.children
+                cities: action.payload.data.cities
             });
         }
 

@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import redditPost from './redditPost';
+import citiesList from './citiesList';
 
 export default combineReducers({
-    redditPost,
+    citiesList,
     routing: routerReducer
 });

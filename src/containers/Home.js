@@ -1,34 +1,33 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import fetchPosts from '../actions/redditPostActions';
 
-import Posts from '../components/Posts';
+import fetchCities from '../actions/cityActions';
+import Cities from '../presentation/cities';
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
+  componentWillMount() {
+    this.props.dispatch(fetchCities());
+  }
 
-    componentWillMount() {
-        this.props.dispatch(fetchPosts('reactjs'));
-    }
-
-    render() {
-        return (
-            <div>
-                <h2>ReactJs Reddit Post</h2>
-                <Posts posts={this.props.redditPost.posts} />
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="container">
+        <h2 className="text-center">ReactJs Reddit Post</h2>
+        <Cities citiesList={this.props.citiesList} />
+      </div>
+    );
+  }
 }
 
 function mapStateToProps(state) {
-    return {
-        redditPost: state.redditPost
-    }
+  return {
+    citiesList: state.citiesList
+  }
 }
 
 export default connect(mapStateToProps)(Home);

@@ -57,6 +57,21 @@ module.exports = {
                 test: /\.json$/,
                 loader: 'json-loader'
             }, {
+                test: /\.woff$/,
+                loader: "url-loader?limit=10000"
+            }, {
+                test: /\.woff2$/,
+                loader: "url-loader?limit=10000"
+            }, {
+                test: /\.ttf$/,
+                loader: "url-loader?limit=10000"
+            }, {
+                test: /\.eot$/,
+                loader: "url-loader?limit=10000"
+            }, {
+                test: /\.otf$/,
+                loader: "url-loader?limit=10000"
+            }, {
                 test: /\.svg?$/,
                 loader: 'svg-sprite?name=[name]_[hash]'
             }
