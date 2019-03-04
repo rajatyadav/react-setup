@@ -1,9 +1,10 @@
 import { combineReducers } from 'redux';
-import { routerReducer } from 'react-router';
-
 import cityReducer from './cityReducer';
+import eventReducer from './eventReducer';
 
-export default combineReducers({
+const rootReducer = combineReducers({
   cityReducer,
-  routing: routerReducer
+  eventReducer
 });
+
+export default rootReducer;
