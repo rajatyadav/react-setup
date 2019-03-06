@@ -1,13 +1,10 @@
 import actionTypes from '../actions/actionTypes';
 
 const initialState = {
-  citise: []
+  cities: []
 }
 
-// API urls
-// https://theinsider.docs.apiary.io/#reference/0/fetch-supported-cities/retrieve-all-cities?console=1
-
-export default function citiesList(state = initialState, action) {
+export default function cityReducer(state = initialState, action) {
   switch (action.type) {
     case actionTypes.GET_CITIES_SUCCESS: {
       return Object.assign({}, state, {

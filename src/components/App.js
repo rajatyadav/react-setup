@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 
-import Home from './Home';
 import Cities from './Cities';
 import Events from './Events';
 
@@ -11,10 +10,7 @@ class App extends Component {
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/cities">Cities</Link>
+            <Link to="/">Cities</Link>
           </li>
           <li>
             <Link to="/events">Events</Link>
@@ -23,8 +19,7 @@ class App extends Component {
 
         <hr />
 
-        <Route exact path="/" component={Home} />
-        <Route path="/cities" component={Cities} />
+        <Route exact path="/" component={Cities} />
         <Route path="/events" component={Events} />
       </div>
     );
