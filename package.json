@@ -2,6 +2,23 @@
   "name": "react-setup",
   "version": "0.1.0",
   "private": true,
+  "description": "React Redux React-Router setup for kickstarting reactjs 16",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rajatyadav/react-setup"
+  },
+  "author": "Rajat Yadav <rajatyadav02@yahoo.co.in> (http://rajatyadav.in/)",
+  "keywords": [
+    "react",
+    "redux",
+    "webpack",
+    "react starter",
+    "react router",
+    "babel"
+  ],
+  "bugs": {
+    "url": "https://github.com/rajatyadav/react-setup/issues"
+  },
   "dependencies": {
     "@babel/core": "7.2.2",
     "@svgr/webpack": "4.1.0",
