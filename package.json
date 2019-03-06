@@ -8,11 +8,6 @@
     "start": "node server.js",
     "dev": "webpack-dev-server --progress --colors --config ./webpack.config.dev.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shek8034/react-webpack-setup"
-  },
-  "author": "Shekhar Kumar <shekhar.mnnit10@gmail.com> (http://iamshek.online/)",
   "license": "MIT",
   "keywords": [
     "react",
@@ -24,9 +19,6 @@
     "babel",
     "koa"
   ],
-  "bugs": {
-    "url": "https://github.com/shek8034/react-webpack-setup/issues"
-  },
   "devDependencies": {
     "babel-core": "6.17.0",
     "babel-loader": "6.2.5",
